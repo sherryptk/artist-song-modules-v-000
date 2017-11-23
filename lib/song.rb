@@ -8,7 +8,7 @@ class Song
 
   @@songs = []
 
-  def class_variable
+  def self.class_variable
     @@songs
   end
 
