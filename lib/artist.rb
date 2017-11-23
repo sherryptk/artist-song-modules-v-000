@@ -8,7 +8,7 @@ class Artist
 
   @@artists = []
 
-  def class_variable
+  def class_variables
     @@artists
   end
 
