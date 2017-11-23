@@ -9,10 +9,6 @@ class Song
 
   @@songs = []
 
-  def self.class_variable
-    @@songs
-  end
-
   def initialize
     @@songs << self
   end
