@@ -1,11 +1,12 @@
 module Memorable
+  attr_accessor :class
 
   def reset_all
     self.all.clear
   end
 
   def count
-    class_variable.count
+    self.class_variable.count
   end
 
 end
