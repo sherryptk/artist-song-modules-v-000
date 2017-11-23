@@ -3,11 +3,11 @@ require 'pry'
 class Song
   extend Memorable
 
-  attr_accessor :name
+  attr_accessor :name, class_variable
   attr_reader :artist
 
   @@songs = []
-  
+
   def class_variable
     @@songs
   end
