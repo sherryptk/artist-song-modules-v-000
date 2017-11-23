@@ -2,6 +2,7 @@ require 'pry'
 
 class Song
   extend Memorable, Findable
+  include Paramable
 
   attr_accessor :name
   attr_reader :artist
@@ -18,10 +19,6 @@ class Song
 
   def artist=(artist)
     @artist = artist
-  end
-
-  def to_param
-    name.downcase.gsub(' ', '-')
   end
 
   def self.all
