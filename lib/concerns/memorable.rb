@@ -1,5 +1,4 @@
 module Memorable
-  attr_accessor :class
 
   def reset_all
     self.all.clear
