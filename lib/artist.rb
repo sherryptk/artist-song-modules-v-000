@@ -9,10 +9,6 @@ class Artist
 
   @@artists = []
 
-  def self.class_variable
-    @@artists
-  end
-
   def initialize
     @@artists << self
     @songs = []
